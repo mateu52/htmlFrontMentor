@@ -53,6 +53,34 @@ body {
   justify-items: center;
 }
 
+.site {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site .left {
+  display: flex;
+  width: 40%;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0px 0px 0px 135px;
+  padding: 50px 0 50px 0;
+}
+
+.site h4 {
+  padding: 60px 0 0 0;
+}
+
+.site h1 {
+  font-size: 130px;
+}
+
+.site p {
+  padding: 0 0 60px 0;
+}
+
 @media only screen and (max-width: 700px) {
   body {
     background-image: url(../starter-code/assets/home/background-home-tablet.jpg);
