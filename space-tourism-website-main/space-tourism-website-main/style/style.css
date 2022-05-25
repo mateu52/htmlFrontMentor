@@ -22,10 +22,30 @@ body {
   align-items: center;
   height: 80px;
   margin: 35px 0 0 0;
+  z-index: 0;
 }
 
-.header img {
+.header .imglogo img {
   padding: 55px;
+  z-index: 0;
+}
+
+.header .imglogo img:hover {
+  display: none;
+  z-index: -1;
+}
+
+.header .imglogo img:hover .img2 {
+  display: flex;
+  z-index: 2;
+}
+
+.header .img2 {
+  display: none;
+}
+
+.header .imgClose {
+  display: none;
 }
 
 .header hr {
@@ -33,6 +53,7 @@ body {
   height: 1%;
   padding: 0 0 0 0px;
   margin: 0 0 0 0;
+  z-index: 2;
 }
 
 .header ol {
@@ -43,7 +64,7 @@ body {
   align-items: center;
   width: 55%;
   height: 100%;
-  padding: 0 5% 0 0;
+  padding: 0 5% 0 10px;
 }
 
 .header li {
@@ -51,34 +72,65 @@ body {
   justify-content: center;
   justify-content: center;
   justify-items: center;
+  z-index: 1;
+}
+
+.header li a {
+  text-decoration: none;
+  color: white;
 }
 
 .site {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  font-family: 'Merriweather', serif;
 }
 
 .site .left {
   display: flex;
   width: 40%;
+  height: 300px;
   color: white;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
   margin: 0px 0px 0px 135px;
   padding: 50px 0 50px 0;
+  line-height: 21px;
 }
 
-.site h4 {
-  padding: 60px 0 0 0;
+.site .left h4 {
+  padding: 0px 0 0 0;
+  font-size: 19px;
+  line-height: 1px;
 }
 
-.site h1 {
+.site .left h1 {
   font-size: 130px;
+  line-height: 1px;
 }
 
-.site p {
-  padding: 0 0 60px 0;
+.site .left p {
+  padding: 0 0 0px 0;
+}
+
+.site .right {
+  color: black;
+  display: flex;
+  align-items: flex-end;
+}
+
+.site .right .aroun {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site .right .aroun h3 {
+  display: flex;
 }
 
 @media only screen and (max-width: 700px) {

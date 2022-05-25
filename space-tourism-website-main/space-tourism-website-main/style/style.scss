@@ -21,15 +21,34 @@ body{
     align-items: center;
     height: 80px;
     margin:35px 0 0 0;
+    z-index:0;
     img{
+    }
+    .imglogo img{
         padding: 55px;
+        z-index:0;
+    }
+    .imglogo img:hover{
+        display: none;
+        z-index: -1;
+        .img2{
+            display: flex;
+            z-index: 2;
+        }
+    }
+    .img2{
+        display: none;
+        
+    }
+    .imgClose{
+        display: none;
     }
     hr{
         width: 35%;
         height: 1%;
         padding:0 0 0 0px;
         margin:0 0 0 0;
-        
+        z-index:2;
     }
     ol{
         list-style-type: none;
@@ -39,34 +58,61 @@ body{
         align-items: center;
         width: 55%;
         height: 100%;
-        padding:0 5% 0 0;
+        padding:0 5% 0 10px;
     }li{
         display: flex;
         justify-content: center;
         justify-content: center;
         justify-items: center;
+        z-index:1;
+        a{
+            text-decoration: none;
+            color:white;
+        }
     }
 }
 .site{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    font-family: 'Merriweather', serif;
     .left{
         display: flex;
         width: 40%;
+        height: 300px;
         color:white;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
+        justify-content: flex-start;
         margin:0px 0px 0px 135px;
         padding: 50px 0 50px 0;
-    }h4{
-        padding:60px 0 0 0;
+        line-height: 21px;
+        h4{
+            padding:0px 0 0 0;
+            font-size:19px;
+            line-height: 1px;;
+        }
+        h1{
+            font-size: 130px;
+            line-height: 1px;;
+        }p{
+            padding: 0 0 0px 0;
+        }
     }
-    h1{
-        font-size: 130px;
-    }p{
-        padding: 0 0 60px 0;
+    .right{
+        color:black;
+        display: flex;
+        align-items: flex-end;
+        .aroun{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h3{
+               display: flex;
+            }
+        }
     }
 }
 
