@@ -22,30 +22,25 @@ body {
   align-items: center;
   height: 80px;
   margin: 35px 0 0 0;
-  z-index: 0;
+  z-index: 1;
 }
 
-.header .imglogo img {
+.header .imglogo {
   padding: 55px;
-  z-index: 0;
-}
-
-.header .imglogo img:hover {
-  display: none;
-  z-index: -1;
-}
-
-.header .imglogo img:hover .img2 {
+  cursor: pointer;
   display: flex;
-  z-index: 2;
 }
 
-.header .img2 {
+.header .imglogo .img2 {
   display: none;
 }
 
-.header .imgClose {
+.header .imglogo .img2 .imgClose {
   display: none;
+}
+
+.header .imglogo:focus .img2 {
+  display: flex;
 }
 
 .header hr {

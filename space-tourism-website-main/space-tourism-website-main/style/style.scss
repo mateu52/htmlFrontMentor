@@ -21,28 +21,31 @@ body{
     align-items: center;
     height: 80px;
     margin:35px 0 0 0;
-    z-index:0;
-    img{
-    }
-    .imglogo img{
+    z-index:1;
+    
+    .imglogo{
         padding: 55px;
-        z-index:0;
-    }
-    .imglogo img:hover{
-        display: none;
-        z-index: -1;
-        .img2{
-            display: flex;
-            z-index: 2;
+        cursor:pointer;
+        display: flex;
+        .img2 {
+            display: none;
+            .imgClose {
+                display: none;
+            }    
         }
-    }
-    .img2{
-        display: none;
+        &:focus{
+            .img2{
+                display: flex;
+            }
+        }
+        
         
     }
-    .imgClose{
-        display: none;
-    }
+    
+        
+    
+    
+    
     hr{
         width: 35%;
         height: 1%;
