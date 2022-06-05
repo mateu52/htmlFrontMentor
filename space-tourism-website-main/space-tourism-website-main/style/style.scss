@@ -25,21 +25,7 @@ body{
     
     .imglogo{
         padding: 55px;
-        cursor:pointer;
         display: flex;
-        .img2 {
-            display: none;
-            .imgClose {
-                display: none;
-            }    
-        }
-        &:focus{
-            .img2{
-                display: flex;
-            }
-        }
-        
-        
     }
     
         
@@ -62,16 +48,25 @@ body{
         width: 55%;
         height: 100%;
         padding:0 5% 0 10px;
-    }li{
-        display: flex;
-        justify-content: center;
-        justify-content: center;
-        justify-items: center;
-        z-index:1;
-        a{
-            text-decoration: none;
-            color:white;
-        }
+        li{
+            display: flex;
+            justify-content: center;
+            justify-content: center;
+            justify-items: center;
+            flex-flow: column;
+            z-index:1;
+            ul{
+                display: flex;
+                flex-flow: column;
+                li{
+
+                }
+            }
+            a{
+                text-decoration: none;
+                color:white;
+            }
+    }
     }
 }
 .site{
@@ -85,7 +80,7 @@ body{
         color:white;
         flex-direction: column;
         justify-content: flex-start;
-        margin:0px 0px 0px 135px;
+        margin:0px 0px 0px 100px;
         padding: 50px 0 50px 0;
         line-height: 21px;
         h4{
@@ -105,6 +100,7 @@ body{
         display: flex;
         align-items: flex-end;
         .aroun{
+            margin-left: 50px;
             width: 180px;
             height: 180px;
             border-radius: 50%;
@@ -121,7 +117,7 @@ body{
 
 
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:750px){
     body{
         background-image: url(../starter-code/assets/home/background-home-tablet.jpg);
         
