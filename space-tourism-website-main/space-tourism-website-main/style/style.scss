@@ -41,32 +41,49 @@ body{
     }
     ol{
         list-style-type: none;
-        background-color: rgba(134, 145, 171, 0.218);
+        background-color: rgba(255, 255, 255, 0.07);
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 55%;
         height: 100%;
-        padding:0 5% 0 10px;
+        padding:0 5% 0 15px;
+        a{
+            display: block;
+            color:bisque;
+            text-align: center;
+        }
         li{
+            &.categ{
+                display: none;
+            }
             display: flex;
             justify-content: center;
             justify-content: center;
             justify-items: center;
             flex-flow: column;
             z-index:1;
-            ul{
-                display: flex;
+            ul{ 
+                display:none;
                 flex-flow: column;
-                li{
-
-                }
+                text-align: center;
+                margin:0 0px;
+                padding:0 10px;
             }
             a{
                 text-decoration: none;
-                color:white;
+                color:rgb(255, 255, 255);               
             }
-    }
+            &:hover{
+                text-align: center;
+                &.categ{
+                    display:none;
+                }
+                ul{
+                    display:block;
+                }
+            }
+        }
     }
 }
 .site{
