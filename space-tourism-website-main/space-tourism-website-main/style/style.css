@@ -75,7 +75,7 @@ body {
 .header ol li:hover {
   text-align: center;
 }
-.header ol li:hover.categ {
+.header ol li:hover .categ {
   display: none;
 }
 .header ol li:hover ul {
