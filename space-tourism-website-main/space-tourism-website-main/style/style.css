@@ -24,12 +24,10 @@ body {
   margin: 35px 0 0 0;
   z-index: 1;
 }
-
 .header .imglogo {
   padding: 55px;
   display: flex;
 }
-
 .header hr {
   width: 35%;
   height: 1%;
@@ -37,18 +35,21 @@ body {
   margin: 0 0 0 0;
   z-index: 2;
 }
-
 .header ol {
   list-style-type: none;
-  background-color: rgba(134, 145, 171, 0.218);
+  background-color: rgba(255, 255, 255, 0.07);
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 55%;
   height: 100%;
-  padding: 0 5% 0 10px;
+  padding: 0 5% 0 15px;
 }
-
+.header ol a {
+  display: block;
+  color: bisque;
+  text-align: center;
+}
 .header ol li {
   display: flex;
   justify-content: center;
@@ -57,23 +58,35 @@ body {
   flex-flow: column;
   z-index: 1;
 }
-
-.header ol li ul {
-  display: flex;
-  flex-flow: column;
+.header ol li.categ {
+  display: none;
 }
-
+.header ol li ul {
+  display: none;
+  flex-flow: column;
+  text-align: center;
+  margin: 0 0px;
+  padding: 0 10px;
+}
 .header ol li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
+}
+.header ol li:hover {
+  text-align: center;
+}
+.header ol li:hover.categ {
+  display: none;
+}
+.header ol li:hover ul {
+  display: block;
 }
 
 .site {
   display: flex;
   justify-content: space-around;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
-
 .site .left {
   display: flex;
   width: 40%;
@@ -85,28 +98,23 @@ body {
   padding: 50px 0 50px 0;
   line-height: 21px;
 }
-
 .site .left h4 {
   padding: 0px 0 0 0;
   font-size: 19px;
   line-height: 1px;
 }
-
 .site .left h1 {
   font-size: 130px;
   line-height: 1px;
 }
-
 .site .left p {
   padding: 0 0 0px 0;
 }
-
 .site .right {
   color: black;
   display: flex;
   align-items: flex-end;
 }
-
 .site .right .aroun {
   margin-left: 50px;
   width: 180px;
@@ -117,7 +125,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .site .right .aroun h3 {
   display: flex;
 }
@@ -127,9 +134,8 @@ body {
     background-image: url(../starter-code/assets/home/background-home-tablet.jpg);
   }
 }
-
 @media only screen and (max-width: 350px) {
   body {
     background-image: url(../starter-code/assets/home/background-home-mobile.jpg);
   }
-}
+}/*# sourceMappingURL=style.css.map */
