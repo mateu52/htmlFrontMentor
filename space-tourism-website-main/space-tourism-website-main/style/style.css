@@ -15,44 +15,51 @@ body {
 .back {
   height: 100vh;
 }
-.back .mobilemenu {
-  display: none;
-}
 .back .header {
   color: white;
   display: flex;
   align-items: center;
   height: 80px;
-  margin: 35px 0 0 0;
+  margin: 20px 0 0 0;
   z-index: 1;
+}
+.back .header .buttonmenu {
+  display: none;
 }
 .back .header .imglogo {
   padding: 55px;
   display: flex;
+  margin-top: 25px;
 }
 .back .header hr {
   width: 35%;
   height: 1%;
   padding: 0 0 0 0px;
-  margin: 0 0 0 0;
+  margin: 25px 0 0 0;
   z-index: 2;
 }
-.back .header ol {
+.back .header .menuGlowne {
   list-style-type: none;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.back .header .menuGlowne ol {
   background-color: rgba(255, 255, 255, 0.07);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 55%;
   height: 100%;
   padding: 0 5% 0 15px;
 }
-.back .header ol a {
+.back .header .menuGlowne ol a {
   display: block;
   color: bisque;
   text-align: center;
 }
-.back .header ol li {
+.back .header .menuGlowne ol li {
   display: flex;
   justify-content: center;
   justify-content: center;
@@ -60,27 +67,24 @@ body {
   flex-flow: column;
   z-index: 1;
 }
-.back .header ol li.categ {
-  display: none;
-}
-.back .header ol li ul {
+.back .header .menuGlowne ol li ul {
   display: none;
   flex-flow: column;
   text-align: center;
   margin: 0 0px;
   padding: 0 10px;
 }
-.back .header ol li a {
+.back .header .menuGlowne ol li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-.back .header ol li:hover {
+.back .header .menuGlowne ol li:hover {
   text-align: center;
 }
-.back .header ol li:hover .categ {
+.back .header .menuGlowne ol li:hover .categ {
   display: none;
 }
-.back .header ol li:hover ul {
+.back .header .menuGlowne ol li:hover ul {
   display: block;
 }
 
@@ -192,17 +196,22 @@ body {
     align-items: flex-start;
     align-content: flex-start;
   }
-  body .back .header .imgHamburger {
+  body .back .header .buttonmenu {
     display: block;
-    align-items: flex-start;
   }
-  body .back .header .imgHamburger:focus {
+  body .back .header .buttonmenu .imgHamburger .mobilemenu {
     display: none;
   }
-  body .back .header .imgHamburger:focus .mobilemenu {
+  body .back .header .buttonmenu .imgHamburger:hover .menuicon {
+    display: none;
+  }
+  body .back .header .buttonmenu .imgHamburger:hover .mobilemenu {
     display: block;
   }
-  body .back .header ol {
+  body .back .header .menuGlowne {
+    display: none;
+  }
+  body .back .header .categ {
     display: none;
   }
   body .back .header hr {

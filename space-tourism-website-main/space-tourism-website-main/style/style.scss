@@ -14,77 +14,83 @@ body{
 }
 .back{
     height: 100vh;
-    
-    .mobilemenu{
-        display: none;
-    }
     .header{
         color:white;
         display: flex;
         align-items: center;
         height: 80px;
-        margin:35px 0 0 0;
+        margin:20px 0 0 0;
         z-index:1;
-        .imgHamburger{
-            // display: none;
+        .buttonmenu{
+            display: none;
         }
+        
         .imglogo{
             padding: 55px;
             display: flex;
+            margin-top:25px;
         }
         hr{
             width: 35%;
             height: 1%;
             padding:0 0 0 0px;
-            margin:0 0 0 0;
+            margin:25px 0 0 0;
             z-index:2;
         }
-        
-        ol{
-            list-style-type: none;
-            background-color: rgba(255, 255, 255, 0.07);
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 55%;
-            height: 100%;
-            padding:0 5% 0 15px;
-            a{
-                display: block;
-                color:bisque;
-                text-align: center;
-            }
-            li{
-                &.categ{
-                    display: none;
-                }
+        .menuGlowne{
+                list-style-type: none;
+                top:0;
+                margin:0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                
+                // padding:0 5% 0 15px;
+            ol{
+                // list-style-type: none;
+                background-color: rgba(255, 255, 255, 0.07);
                 display: flex;
-                justify-content: center;
-                justify-content: center;
-                justify-items: center;
-                flex-flow: column;
-                z-index:1;
-                ul{ 
-                    display:none;
-                    flex-flow: column;
-                    text-align: center;
-                    margin:0 0px;
-                    padding:0 10px;
-                }
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+                padding:0 5% 0 15px;
                 a{
-                    text-decoration: none;
-                    color:rgb(255, 255, 255);                  
-                }
-                &:hover{
-                    .categ{
-                        display:none;
-                    }
+                    display: block;
+                    color:bisque;
                     text-align: center;
-                    ul{
-                        display:block;
-                    }
                 }
-    
+                li{
+                    // &.categ{
+                    //     display: none;
+                    // }
+                    display: flex;
+                    justify-content: center;
+                    justify-content: center;
+                    justify-items: center;
+                    flex-flow: column;
+                    z-index:1;
+                    ul{ 
+                        display:none;
+                        flex-flow: column;
+                        text-align: center;
+                        margin:0 0px;
+                        padding:0 10px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:rgb(255, 255, 255);                  
+                    }
+                    &:hover{
+                        .categ{
+                            display:none;
+                        }
+                        text-align: center;
+                        ul{
+                            display:block;
+                        }
+                    }
+        
+                }
             }
         }
     }
@@ -208,17 +214,26 @@ body{
                 justify-content: space-between;
                 align-items: flex-start;
                 align-content: flex-start;
-                .imgHamburger{
+                .buttonmenu{
                     display: block;
-                    align-items: flex-start;
-                    &:focus{
-                        display: none;
+                    .imgHamburger{
                         .mobilemenu{
-                            display:block;
+                            display: none;
+                        }
+                        &:hover{
+                            .menuicon{
+                                display: none;
+                            }
+                            .mobilemenu{
+                                display: block;
+                            }
                         }
                     }
                 }
-                ol{
+                .menuGlowne{
+                    display: none;
+                }
+                .categ{
                     display: none;
                 }
                 hr{
@@ -229,17 +244,12 @@ body{
                     display: flex;
                     padding-right: 25px;
                     padding-top: 25px;
-                    
                     img{
                         width: 90px;
                     }
                 }
             }
-            
-            
         }
-
-            
         .site{
                 .left{
                     margin-left: 40px;
