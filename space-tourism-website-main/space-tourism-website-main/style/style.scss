@@ -152,35 +152,43 @@ body{
         background-size: 100%;
         .back{    
             .header{
+                
                 margin:20px 0 0 0;
-                height: 50px;
+                height: 80px;
                 hr{
                     width: 10%;
                 }
-                ol{
-                    background-color: #ffffff0c;
-                    display: flex;
-                    // justify-content: space-between;
-                    a{
-                        font-size: 70%;
-                        font-weight: 400;
-                        color:#ffffffc7;
-                    }
-                    li{
-                        ul{
-                            height: 70px;
-                            margin-top:30px;
-                            li{
-                                a{
-                                    
-                                    font-size: 14px;
+                .menuGlowne{
+                    ol{
+                        background-color: #ffffff0d;
+                        display: flex;
+                        // justify-content: space-between;
+                        a{
+                            font-size: 70%;
+                            font-weight: 600;
+                            color:#ffffffc7;
+                        }
+                        li{
+                            
+                            ul{
+                                height: 70px;
+                                margin-top:30px;
+                                li{
+                                    a{
+                                        
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                         }
                     }
                 }
+                
             }
             .site{
+                margin-top: 30px;
+                margin-left: -60px;  
+                size: 100%;
                 .left{
                     h4{
                         font-size: 80%;
@@ -189,6 +197,7 @@ body{
                         font-size: 80px;
                     }
                     p{
+                        padding-top: 20px;
                         font-size: 14px;
                     }
                 }
@@ -230,6 +239,27 @@ body{
                             }
                             .mobilemenu{
                                 display: block;
+                                width: 300px;
+                                ol{
+                                    background-color: #ffffff30;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    height: 80px;
+                                    width: 100%;
+                                    list-style: none;
+                                    align-items: flex-start;
+                                    padding:0 5% 0 15px;
+                                    a{
+                                        display: block;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        text-align: center;
+                                    }
+                                    li{
+                                        justify-items: center;
+                                        flex-flow: column;
+                                    }
+                                }
                             }
                         }
                     }
@@ -249,11 +279,13 @@ body{
                     padding-right: 25px;
                     padding-top: 25px;
                     img{
-                        width: 90px;
+                        width: 40px;
                     }
                 }
             }
             .site{
+                margin-left: 20px;
+                width: 100%;
                 .left{
                     margin-left: 40px;
                     h4{
@@ -270,11 +302,14 @@ body{
                     align-items:flex-end;
                     padding-top:80px ;
                     .aroun{
+                        right: 0;
                         margin-left: 20px;
-                        margin-right: 30px;
+                        margin-right: 10px;
                         border-radius: 50%;
                         width: 120px;
                         height: 120px;
+                        .entrance{
+                        }
                     }
                 }
             }
