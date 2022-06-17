@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: absolute;
   z-index: 0;
@@ -10,10 +10,12 @@ body {
   background-image: url("../starter-code/assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 100%;
 }
 
 .back {
   height: 100vh;
+  width: 100%;
 }
 .back .header {
   color: white;
@@ -27,12 +29,12 @@ body {
   display: none;
 }
 .back .header .imglogo {
-  padding: 55px;
+  padding: 55px 55px 55px 80px;
   display: flex;
   margin-top: 25px;
 }
 .back .header hr {
-  width: 35%;
+  width: 55%;
   height: 1%;
   padding: 0 0 0 0px;
   margin: 25px 0 0 0;
@@ -42,7 +44,7 @@ body {
   list-style-type: none;
   top: 0;
   margin: 0;
-  padding: 0;
+  padding: 0 20px 0 0;
   height: 100%;
   width: 100%;
 }
@@ -52,6 +54,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  width: 100%;
   padding: 0 5% 0 15px;
 }
 .back .header .menuGlowne ol a {
@@ -87,13 +90,12 @@ body {
 .back .header .menuGlowne ol li:hover ul {
   display: block;
 }
-
-.site {
+.back .site {
   display: flex;
   justify-content: space-around;
   font-family: "Merriweather", serif;
 }
-.site .left {
+.back .site .left {
   display: flex;
   width: 40%;
   height: 300px;
@@ -104,24 +106,23 @@ body {
   padding: 50px 0 50px 0;
   line-height: 21px;
 }
-.site .left h4 {
+.back .site .left h4 {
   padding: 0px 0 0 0;
   font-size: 19px;
   line-height: 1px;
 }
-.site .left h1 {
+.back .site .left h1 {
   font-size: 130px;
   line-height: 1px;
 }
-.site .left p {
+.back .site .left p {
   padding: 0 0 0px 0;
 }
-.site .right {
-  color: black;
+.back .site .right {
   display: flex;
   align-items: flex-end;
 }
-.site .right .aroun {
+.back .site .right .aroun {
   margin-left: 50px;
   width: 180px;
   height: 180px;
@@ -131,7 +132,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.site .right .aroun h3 {
+.back .site .right .aroun h3 {
   display: flex;
 }
 
@@ -140,43 +141,43 @@ body {
     background-image: url(../starter-code/assets/home/background-home-tablet.jpg);
     background-size: 100%;
   }
-  body .header {
+  body .back .header {
     margin: 20px 0 0 0;
     height: 50px;
   }
-  body .header hr {
+  body .back .header hr {
     width: 10%;
   }
-  body .header ol {
+  body .back .header ol {
     background-color: rgba(255, 255, 255, 0.0470588235);
     display: flex;
   }
-  body .header ol a {
+  body .back .header ol a {
     font-size: 70%;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7803921569);
   }
-  body .header ol li ul {
+  body .back .header ol li ul {
     height: 70px;
     margin-top: 30px;
   }
-  body .header ol li ul li a {
+  body .back .header ol li ul li a {
     font-size: 14px;
   }
-  body .site .left h4 {
+  body .back .site .left h4 {
     font-size: 80%;
   }
-  body .site .left h1 {
+  body .back .site .left h1 {
     font-size: 80px;
   }
-  body .site .left p {
+  body .back .site .left p {
     font-size: 14px;
   }
-  body .site .right {
+  body .back .site .right {
     align-items: center;
     padding-top: 80px;
   }
-  body .site .right .aroun {
+  body .back .site .right .aroun {
     margin-left: 20px;
     margin-right: 30px;
     border-radius: 50%;
@@ -226,23 +227,23 @@ body {
   body .back .header .imglogo img {
     width: 90px;
   }
-  body .site .left {
+  body .back .site .left {
     margin-left: 40px;
   }
-  body .site .left h4 {
+  body .back .site .left h4 {
     font-size: 70%;
   }
-  body .site .left h1 {
+  body .back .site .left h1 {
     font-size: 90px;
   }
-  body .site .left p {
+  body .back .site .left p {
     font-size: 12px;
   }
-  body .site .right {
+  body .back .site .right {
     align-items: flex-end;
     padding-top: 80px;
   }
-  body .site .right .aroun {
+  body .back .site .right .aroun {
     margin-left: 20px;
     margin-right: 30px;
     border-radius: 50%;
