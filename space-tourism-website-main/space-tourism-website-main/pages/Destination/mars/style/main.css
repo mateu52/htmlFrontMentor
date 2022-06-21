@@ -128,7 +128,7 @@ body {
   height: 180px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
-  background-image: url("../image-europa.webp");
+  background-image: url("../image-mars.webp");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,7 +136,7 @@ body {
 
 @media only screen and (max-width: 750px) {
   body {
-    background-image: url(../../background-destination-tablet.jpg);
+    background-image: url("../../background-destination-tablet.jpg");
     background-size: 100%;
   }
   body .back .header {
@@ -191,7 +191,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
   body .back {
-    background-image: url(../../background-destination-mobile.jpg);
+    background-image: url("../../background-destination-mobile.jpg");
     background-size: 100vh 100vh;
   }
   body .back .header {
