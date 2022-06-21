@@ -7,7 +7,7 @@ body {
   position: absolute;
   z-index: 0;
   background-color: #000000;
-  background-image: url("../starter-code/assets/home/background-home-desktop.jpg");
+  background-image: url("../../background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100%;
@@ -127,18 +127,16 @@ body {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("../image-europa.webp");
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.back .site .right .aroun h3 {
-  display: flex;
-}
 
 @media only screen and (max-width: 750px) {
   body {
-    background-image: url("../starter-code/assets/home/background-home-tablet.jpg");
+    background-image: url(../../background-destination-tablet.jpg);
     background-size: 100%;
   }
   body .back .header {
@@ -193,7 +191,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
   body .back {
-    background-image: url("../starter-code/assets/home/background-home-mobile.jpg");
+    background-image: url(../../background-destination-mobile.jpg);
     background-size: 100vh 100vh;
   }
   body .back .header {
@@ -282,4 +280,4 @@ body {
     width: 120px;
     height: 120px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
