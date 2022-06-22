@@ -7,7 +7,7 @@ body{
     position: absolute;
     z-index: 0;   
     background-color: #000000;
-    background-image: url('../../background-destination-desktop.jpg');
+    background-image: url('../crew/background-crew-desktop.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100%;
@@ -131,7 +131,7 @@ body{
                 height: 180px;
                 border-radius: 50%;
                 background-color: rgba(255, 255, 255, 0);
-                background-image: url('../image-titan.webp');
+                background-image: url('../image-europa.webp');
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -146,7 +146,7 @@ body{
 
 @media only screen and (max-width:750px){
     body{
-        background-image: url('../../background-destination-tablet.jpg');
+        background-image: url('../crew/background-crew-tablet.jpg');
         background-size: 100%;
         .back{    
             .header{
@@ -217,7 +217,7 @@ body{
 @media only screen and (max-width:500px){
     body{
         .back{
-            background-image: url('../../background-destination-mobile.jpg');
+            background-image: url('../crew/background-crew-mobile.jpg');
             background-size: 100vh 100vh;
             .header{
                 margin:0;
@@ -304,10 +304,13 @@ body{
                 }
             }
             .site{
-                margin-left: 20px;
+                margin:0 0 0 20px;
                 width: 100%;
+                top:0;
                 .left{
-                    margin-left: 40px;
+                    top:0;
+                    padding: 0 0 ;
+                    margin-left: 10px;
                     h4{
                         font-size: 70%;
                     }
@@ -321,13 +324,17 @@ body{
                 .right{
                     align-items:flex-end;
                     padding-top:80px ;
-                    .aroun{
-                        right: 0;
-                        margin-left: 20px;
-                        margin-right: 10px;
-                        border-radius: 50%;
-                        width: 120px;
-                        height: 120px;
+                    img{
+                        height: 40vh;
+                        
+                        padding:0 40px 0 0;
+
+                        // right: 0;
+                        // margin-left: 20px;
+                        // margin-right: 10px;
+                        // border-radius: 50%;
+                        // width: 120px;
+                        // height: 120px;
                     }
                 }
             }

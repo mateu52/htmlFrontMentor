@@ -213,15 +213,18 @@ body {
   body .back .header .buttonmenu .imgHamburger:hover .mobilemenu {
     display: block;
     width: 300px;
+    font-size: 12px;
   }
   body .back .header .buttonmenu .imgHamburger:hover .mobilemenu ol {
-    background-color: rgba(255, 255, 255, 0.1882352941);
+    list-style-type: none;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.1137254902);
     display: flex;
     justify-content: space-between;
     height: 80px;
     width: 100%;
     list-style: none;
-    align-items: flex-start;
+    align-items: center;
     padding: 0 5% 0 15px;
   }
   body .back .header .buttonmenu .imgHamburger:hover .mobilemenu ol a {
@@ -230,9 +233,25 @@ body {
     text-decoration: none;
     text-align: center;
   }
+  body .back .header .buttonmenu .imgHamburger:hover .mobilemenu ol ul {
+    display: none;
+    flex-flow: column;
+    text-align: center;
+    margin: 0 0px;
+    padding: 0 10px;
+    list-style: none;
+  }
   body .back .header .buttonmenu .imgHamburger:hover .mobilemenu ol li {
+    justify-content: center;
+    justify-content: center;
     justify-items: center;
     flex-flow: column;
+  }
+  body .back .header .buttonmenu .imgHamburger:hover .mobilemenu ol li:hover .categ {
+    display: none;
+  }
+  body .back .header .buttonmenu .imgHamburger:hover .mobilemenu ol li:hover ul {
+    display: block;
   }
   body .back .header .menuGlowne {
     display: none;
