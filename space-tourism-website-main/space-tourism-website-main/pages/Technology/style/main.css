@@ -94,6 +94,7 @@ body {
   display: flex;
   justify-content: space-around;
   font-family: "Merriweather", serif;
+  size: 100vh;
 }
 .back .site .left {
   display: flex;
@@ -120,18 +121,24 @@ body {
 }
 .back .site .right {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  margin-top: 40px;
 }
 .back .site .right .aroun {
   margin-left: 50px;
-  width: 180px;
-  height: 180px;
+  width: 30vh;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
   background-image: url("../image-europa.webp");
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0px 30px 0px 0px;
+  padding: 0px 20px 0px 0px;
+}
+.back .site .right .aroun .entrance img {
+  display: flex;
+  width: 40vh;
 }
 
 @media only screen and (max-width: 750px) {
@@ -164,9 +171,10 @@ body {
   }
   body .back .site {
     padding: 0;
-    margin-top: 30px;
-    margin-left: -60px;
     size: 100%;
+  }
+  body .back .site .left {
+    margin-left: -20px;
   }
   body .back .site .left h4 {
     font-size: 80%;
@@ -181,13 +189,15 @@ body {
   body .back .site .right {
     align-items: center;
     padding-top: 80px;
+    margin: 10px;
   }
   body .back .site .right .aroun {
     margin-left: 20px;
     margin-right: 30px;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+  }
+  body .back .site .right .aroun .entrance img {
+    width: 300px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -276,15 +286,17 @@ body {
     width: 40px;
   }
   body .back .site {
-    margin: 0 0 0 0px;
-    width: 100%;
+    padding: 0px 10px 0px 20px;
+    size: 100%;
     display: flex;
     flex-wrap: wrap;
   }
   body .back .site .left {
     z-index: 1;
-    margin: 0 0 0 0px;
-    padding: 0 0 0 15px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 80vh;
+    line-height: 1rem;
   }
   body .back .site .left h3 {
     font-size: 1rem;
@@ -294,10 +306,10 @@ body {
   }
   body .back .site .right {
     align-items: center;
-    padding: 0px 0 0 0;
+    padding: 0px 0px 0px 20px;
+    margin: -20px 0px 0px 10px;
   }
   body .back .site .right img {
-    height: 20vh;
     opacity: 0.9;
     border-radius: 10px;
     box-shadow: white -3px 2px 7px 3px;
