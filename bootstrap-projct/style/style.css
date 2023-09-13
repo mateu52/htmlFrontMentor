@@ -1,0 +1,74 @@
+* {
+  box-sizing: content-box;
+}
+
+.selector-for-some-widget {
+  box-sizing:content-box;
+}
+
+body {
+  background-color: #2F3336;
+  color: #efefef;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #C0D06F;
+  margin: 20px;
+}
+
+.races {
+  text-align: center;
+}
+.races p{
+	margin-bottom:30px;
+}
+
+.races figcaption{
+	margin-top: 8px;
+}
+.wpis {
+  text-align:justify;
+  font-size: 16px;
+  padding: 25px;
+  margin-bottom:10px;
+
+}
+
+/* .navbar-nav li:hover > .dropdown-menu{
+  display: block;
+} */
+.bg-races{
+  background-color: #C0D06F !important;
+}
+.blockquote{
+  line-height: 120%;
+}
+.list-group-item{
+  background-color: #141414;
+  color: white;
+}
+.list-group-item:hover{
+  background-color: #C0D06F !important;
+}
+@media (max-width:575px)
+{
+  .wpis{
+    padding-right:30px;
+    text-align:inherit;
+    font-size: 14px;
+  }
+  .float-end, .float-start{
+    max-width: 50%;
+  }
+  .blockquote{
+    font-size: 12px;
+  }
+  .list-group{
+    text-align: center;
+    width: 80%;
+  }
+}
